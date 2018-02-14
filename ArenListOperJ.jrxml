@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ArenListOperJ" pageWidth="1008" pageHeight="612" orientation="Landscape" columnWidth="968" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Error" uuid="d1bb2844-b33c-4560-b306-ce7f104e498d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="conex_jaren.xml"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.report.description" value=""/>
+	<property name="net.sf.jasperreports.export.xls.ignore.graphics" value="true"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="511"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="475"/>
+	<parameter name="p_titulo" class="java.lang.String"/>
+	<parameter name="p_usuario" class="java.lang.String"/>
+	<parameter name="p_logo" class="java.lang.String"/>
+	<queryString language="json">
+		<![CDATA[list]]>
+	</queryString>
+	<field name="driverTitle" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="driverTitle"/>
+		<fieldDescription><![CDATA[driverTitle]]></fieldDescription>
+	</field>
+	<field name="placeId" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="placeId"/>
+		<fieldDescription><![CDATA[placeId]]></fieldDescription>
+	</field>
+	<field name="accountRUC" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="accountRUC"/>
+		<fieldDescription><![CDATA[accountRUC]]></fieldDescription>
+	</field>
+	<field name="rechargeReferenceDate" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="rechargeReferenceDate"/>
+		<fieldDescription><![CDATA[rechargeReferenceDate]]></fieldDescription>
+	</field>
+	<field name="recordId" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="recordId"/>
+		<fieldDescription><![CDATA[recordId]]></fieldDescription>
+	</field>
+	<field name="placeTitle" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="placeTitle"/>
+		<fieldDescription><![CDATA[placeTitle]]></fieldDescription>
+	</field>
+	<field name="price" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="price"/>
+		<fieldDescription><![CDATA[price]]></fieldDescription>
+	</field>
+	<field name="payment" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="payment"/>
+		<fieldDescription><![CDATA[payment]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="id"/>
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="usernameUpdater" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="usernameUpdater"/>
+		<fieldDescription><![CDATA[usernameUpdater]]></fieldDescription>
+	</field>
+	<field name="containerId" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="containerId"/>
+		<fieldDescription><![CDATA[containerId]]></fieldDescription>
+	</field>
+	<field name="companyCode" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="companyCode"/>
+		<fieldDescription><![CDATA[companyCode]]></fieldDescription>
+	</field>
+	<field name="images" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="images"/>
+		<fieldDescription><![CDATA[images]]></fieldDescription>
+	</field>
+	<field name="visible" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="visible"/>
+		<fieldDescription><![CDATA[visible]]></fieldDescription>
+	</field>
+	<field name="usernameCreator" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="usernameCreator"/>
+		<fieldDescription><![CDATA[usernameCreator]]></fieldDescription>
+	</field>
+	<field name="ip" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="ip"/>
+		<fieldDescription><![CDATA[ip]]></fieldDescription>
+	</field>
+	<field name="rechargeQuantity" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="rechargeQuantity"/>
+		<fieldDescription><![CDATA[rechargeQuantity]]></fieldDescription>
+	</field>
+	<field name="vehicleCode" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="vehicleCode"/>
+		<fieldDescription><![CDATA[vehicleCode]]></fieldDescription>
+	</field>
+	<field name="sandTypeCode" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="sandTypeCode"/>
+		<fieldDescription><![CDATA[sandTypeCode]]></fieldDescription>
+	</field>
+	<field name="volume" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="volume"/>
+		<fieldDescription><![CDATA[volume]]></fieldDescription>
+	</field>
+	<field name="accountId" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="accountId"/>
+		<fieldDescription><![CDATA[accountId]]></fieldDescription>
+	</field>
+	<field name="companyId" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="companyId"/>
+		<fieldDescription><![CDATA[companyId]]></fieldDescription>
+	</field>
+	<field name="driverId" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="driverId"/>
+		<fieldDescription><![CDATA[driverId]]></fieldDescription>
+	</field>
+	<field name="rechargeTypeCode" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="rechargeTypeCode"/>
+		<fieldDescription><![CDATA[rechargeTypeCode]]></fieldDescription>
+	</field>
+	<field name="containerTitle" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="containerTitle"/>
+		<fieldDescription><![CDATA[containerTitle]]></fieldDescription>
+	</field>
+	<field name="detail" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="detail"/>
+		<fieldDescription><![CDATA[detail]]></fieldDescription>
+	</field>
+	<field name="accountName" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="accountName"/>
+		<fieldDescription><![CDATA[accountName]]></fieldDescription>
+	</field>
+	<field name="companyTitle" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="companyTitle"/>
+		<fieldDescription><![CDATA[companyTitle]]></fieldDescription>
+	</field>
+	<field name="icon" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="icon"/>
+		<fieldDescription><![CDATA[icon]]></fieldDescription>
+	</field>
+	<field name="rechargePaid" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="rechargePaid"/>
+		<fieldDescription><![CDATA[rechargePaid]]></fieldDescription>
+	</field>
+	<field name="sandTypeId" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="sandTypeId"/>
+		<fieldDescription><![CDATA[sandTypeId]]></fieldDescription>
+	</field>
+	<field name="title" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="title"/>
+		<fieldDescription><![CDATA[title]]></fieldDescription>
+	</field>
+	<field name="enabled" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="enabled"/>
+		<fieldDescription><![CDATA[enabled]]></fieldDescription>
+	</field>
+	<field name="driverCode" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="driverCode"/>
+		<fieldDescription><![CDATA[driverCode]]></fieldDescription>
+	</field>
+	<field name="dateCreated" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="dateCreated"/>
+		<fieldDescription><![CDATA[dateCreated]]></fieldDescription>
+	</field>
+	<field name="operationId" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="operationId"/>
+		<fieldDescription><![CDATA[operationId]]></fieldDescription>
+	</field>
+	<field name="vehicleId" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="vehicleId"/>
+		<fieldDescription><![CDATA[vehicleId]]></fieldDescription>
+	</field>
+	<field name="placeCode" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="placeCode"/>
+		<fieldDescription><![CDATA[placeCode]]></fieldDescription>
+	</field>
+	<field name="rechargeCode" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="rechargeCode"/>
+		<fieldDescription><![CDATA[rechargeCode]]></fieldDescription>
+	</field>
+	<field name="recordTitle" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="recordTitle"/>
+		<fieldDescription><![CDATA[recordTitle]]></fieldDescription>
+	</field>
+	<field name="editable" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="editable"/>
+		<fieldDescription><![CDATA[editable]]></fieldDescription>
+	</field>
+	<field name="vehicleTitle" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="vehicleTitle"/>
+		<fieldDescription><![CDATA[vehicleTitle]]></fieldDescription>
+	</field>
+	<field name="userAgent" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="userAgent"/>
+		<fieldDescription><![CDATA[userAgent]]></fieldDescription>
+	</field>
+	<field name="rechargeId" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="rechargeId"/>
+		<fieldDescription><![CDATA[rechargeId]]></fieldDescription>
+	</field>
+	<field name="dateUpdated" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="dateUpdated"/>
+		<fieldDescription><![CDATA[dateUpdated]]></fieldDescription>
+	</field>
+	<field name="deleted" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="deleted"/>
+		<fieldDescription><![CDATA[deleted]]></fieldDescription>
+	</field>
+	<field name="accountEmail" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="accountEmail"/>
+		<fieldDescription><![CDATA[accountEmail]]></fieldDescription>
+	</field>
+	<field name="invoice" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="invoice"/>
+		<fieldDescription><![CDATA[invoice]]></fieldDescription>
+	</field>
+	<field name="rechargeTypeTitle" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="rechargeTypeTitle"/>
+		<fieldDescription><![CDATA[rechargeTypeTitle]]></fieldDescription>
+	</field>
+	<field name="rechargeTypeId" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="rechargeTypeId"/>
+		<fieldDescription><![CDATA[rechargeTypeId]]></fieldDescription>
+	</field>
+	<field name="sandTypeTitle" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="sandTypeTitle"/>
+		<fieldDescription><![CDATA[sandTypeTitle]]></fieldDescription>
+	</field>
+	<pageHeader>
+		<band height="52" splitType="Stretch">
+			<image>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="1" width="129" height="50" uuid="afc04ab1-f0fa-4b92-97ba-c5a38ac51044"/>
+				<imageExpression><![CDATA[$P{p_logo}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="276" y="1" width="416" height="49" uuid="78a42424-519a-4ff1-9b15-830e4e03bc74"/>
+				<textElement textAlignment="Center">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_titulo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="28" splitType="Stretch">
+			<line>
+				<reportElement positionType="Float" x="0" y="0" width="980" height="1" uuid="b398e541-c6cc-441c-a9ab-8225219f45c1"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement positionType="Float" x="0" y="25" width="980" height="1" uuid="ef1878c4-a49b-440c-8885-4672df3d02d0"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="0" y="2" width="40" height="19" uuid="f752cf9a-fa18-4f57-b6d3-08c1ede4f244"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ref.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="2" width="65" height="19" uuid="8ae361ae-6821-4f02-9899-dfa22e58e631"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha Ref.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="107" y="2" width="62" height="19" uuid="7a775716-e5d4-4f9c-863a-59fd31b0342b"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Compañia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="ContainerHeight" x="183" y="2" width="60" height="24" uuid="29849dd7-9ca5-4e36-8e08-892bb62cef72"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo Compañia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="2" width="53" height="19" uuid="01e934df-cd26-4c28-82cc-00b3d80a537b"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Volumen]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="318" y="2" width="52" height="19" uuid="e4d057b2-e5a4-47c4-a4f5-eba831eaec6d"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cantidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="373" y="2" width="45" height="19" uuid="9234c9c8-fb4c-4aae-a3ac-87a8964e7ae7"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pagado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="2" width="44" height="19" uuid="b9edd19f-2d59-4f67-8675-c88c377acd46"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cuenta]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="2" width="51" height="19" uuid="6ebdb849-ada4-40c2-9edf-81804725cc4a"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Registro]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="521" y="2" width="45" height="19" uuid="eeb6ff6b-0c41-4bd3-9c7f-02df3f1ee4fc"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pago]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="567" y="2" width="60" height="26" uuid="695052d1-3e1a-4d88-ad24-5b0de01adbeb"/>
+				<textElement rotation="None">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Vagoneta Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="627" y="2" width="69" height="26" uuid="8e1fab1b-7d0f-40fe-a2d0-554beac1c0f5"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Vagoneta Title]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="702" y="2" width="60" height="26" uuid="6a9f5009-8026-445f-aeba-5a00761766e0"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Registro Titulo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="765" y="2" width="75" height="26" uuid="742effa2-57a7-41ac-a4a3-ccf360bd31af"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Vehiculo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="840" y="2" width="60" height="26" uuid="d951c12d-285b-46bb-b495-a5d6a3ba24c7"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Recarga ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="904" y="2" width="63" height="26" uuid="6e05b0fd-332e-4324-8ee3-c32281430f87"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Factura]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="1" width="980" height="29" forecolor="#AFB4FF" backcolor="#AFB4FF" uuid="137979b3-7268-4512-a657-74aad06e55c2">
+					<printWhenExpression><![CDATA[$V{REPORT_COUNT}%2==1]]></printWhenExpression>
+				</reportElement>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement x="765" y="2" width="75" height="30" uuid="4446b55d-dfee-4e1a-808c-3409d233febb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1177222a-7a7d-4896-a981-904da0636269"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{vehicleTitle}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="840" y="2" width="60" height="30" uuid="c264f02b-101f-496c-b55c-26111d8469f4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1177222a-7a7d-4896-a981-904da0636269"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{rechargeId}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="904" y="2" width="60" height="30" uuid="f9e7a249-8a67-4e25-a694-421189a6506a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1177222a-7a7d-4896-a981-904da0636269"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{invoice}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="567" y="2" width="60" height="30" uuid="d2dbc762-91a8-461c-a6cd-f7d751d41a12">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1177222a-7a7d-4896-a981-904da0636269"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{containerId}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="631" y="2" width="60" height="30" uuid="b86b4c17-9052-4100-83e3-5e4a97908b9e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1177222a-7a7d-4896-a981-904da0636269"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{containerTitle}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="418" y="2" width="52" height="30" uuid="31866b94-ab84-4509-abae-5a8b6b8bb075">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1177222a-7a7d-4896-a981-904da0636269"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{accountName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="473" y="2" width="87" height="30" uuid="e5dbf1c9-e1ad-4ba7-bc0b-b8e7502cf318">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1177222a-7a7d-4896-a981-904da0636269"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{payment}.toString().equals("true")?"SI":"NO"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="319" y="2" width="50" height="30" uuid="5211209b-f79a-4b89-931b-c6dba5e82208">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1177222a-7a7d-4896-a981-904da0636269"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{rechargeQuantity}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="258" y="2" width="50" height="30" uuid="cb938552-8a1d-4682-ae69-0b1e9b0d5ab0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1177222a-7a7d-4896-a981-904da0636269"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{volume}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="2" width="78" height="30" uuid="8079c967-e272-4a3c-869b-03016e4ee6d3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1177222a-7a7d-4896-a981-904da0636269"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{companyCode}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="105" y="2" width="74" height="30" uuid="a8112ad3-eed8-4dd3-be1d-4b892ebbbb54">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1177222a-7a7d-4896-a981-904da0636269"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{companyTitle}]]></textFieldExpression>
+			</textField>
+			<textField pattern="yyyy-MM-DD" isBlankWhenNull="true">
+				<reportElement x="36" y="2" width="70" height="30" uuid="2e91d6f6-197d-4321-83b8-b6be32e90398">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1177222a-7a7d-4896-a981-904da0636269"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{rechargeReferenceDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="372" y="2" width="50" height="30" uuid="22583313-cc9b-4efe-8d49-84534bc0779f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1177222a-7a7d-4896-a981-904da0636269"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{accountEmail}.toString().equals("true")?"SI":"NO"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="30" splitType="Stretch">
+			<textField pattern="dd MMMMM yyyy h.mm a">
+				<reportElement x="0" y="2" width="250" height="20" uuid="8b2819dd-0960-4e66-a09d-e1d393a72936"/>
+				<textFieldExpression><![CDATA["Usuario:"+$P{p_usuario}+" "+new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="798" y="0" width="170" height="20" uuid="d3389657-8a2f-4f19-a240-2d0601fec47d"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}+" - "+$V{PAGE_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
